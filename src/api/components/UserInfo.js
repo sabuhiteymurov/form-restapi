@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import axios from 'axios';
 import uuid from 'react-uuid';
-import { Link } from 'react-router-dom';
 
 const UserInfo = ({
   name,
