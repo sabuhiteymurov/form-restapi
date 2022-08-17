@@ -1,0 +1,91 @@
+.user-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+
+  .container-fluid {
+    font-size: 1.6rem !important;
+  }
+  .user-products_title {
+    text-align: center;
+    padding: 2.5rem 0;
+    color: #222;
+    font-weight: 600;
+  }
+
+  .table-delete-icon {
+    cursor: pointer;
+  }
+}
+
+.add-product-form {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.2rem;
+
+  &--button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    background-color: #69db7c;
+    transition: all 0.3s;
+    padding: 1rem 1.6rem;
+    color: #333;
+    font-weight: 600;
+    &:hover {
+      background-color: #51cf66;
+    }
+  }
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+  width: 47.8%;
+  background-color: #333;
+  padding-left: 13rem;
+
+  p {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  &_text {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+    width: 100%;
+    padding-left: 3.2rem;
+    margin-bottom: 1rem;
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    &_buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .user-info_update {
+      cursor: pointer;
+    }
+    .user-info_delete {
+      cursor: pointer;
+    }
+  }
+}

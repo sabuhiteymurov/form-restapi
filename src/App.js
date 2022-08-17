@@ -1,14 +1,15 @@
-import Form from "./api/components/Form";
-
+import Form from './api/components/Form';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UserProducts from './api/components/UserProducts';
 
 function App() {
-
-  
   return (
-    <div className="App">
-      <h2 className="main-title">User form</h2>
-      <Form/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={'/'} element={<Form />}></Route>
+        <Route path={'/products'} element={<UserProducts />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
