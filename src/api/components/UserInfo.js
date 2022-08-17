@@ -18,10 +18,6 @@ const UserInfo = ({
   const emailEl = useRef();
   const numberEl = useRef();
 
-  // useEffect(()=>{
-
-  // },[name,email,phoneNumber])
-
   const handleDelete = () => {
     axios
       .delete(
